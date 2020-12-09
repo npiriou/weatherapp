@@ -1,8 +1,40 @@
-main{
-    margin: 5vh 5vw 5vh 5vw;
+body{
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    padding: 5vh 5vw 5vh 5vw;
     text-align: center;
 }
 
-#text-404{
-visibility:hidden;
+.text-404 {
+    visibility: hidden;
 }
+
+nav {
+    position: fixed;
+    bottom:0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    background-color: darkgrey;
+    border-top: 1px solid black;
+}
+.nav-elem{
+    border: 1px solid black;
+    padding: 3vh 3vw 3vh 3vw !important;
+    border-radius:5px;
+}
+.nav-elem:hover{
+cursor: pointer;
+}
+
+h1{
+    padding: 5vh 3vw 5vh 3vw !important;
+}
+input:placeholder-shown {
+    font-style: italic;
+ }

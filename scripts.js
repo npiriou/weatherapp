@@ -1,4 +1,6 @@
-let apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&APPID=a33576c7bfd6ba221202c241d8cb8888&lang=fr'
+let apiUrl //= 'http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&APPID=a33576c7bfd6ba221202c241d8cb8888&lang=fr'
+let city1, city2;
+
 async function getWeather() {
     const response = await fetch(apiUrl)
     const data = await response.json()
@@ -14,7 +16,7 @@ console.log(data.cod)
         document.getElementById('description').textContent = description
         document.getElementById('icon-container').innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png" />`
         document.getElementById('temperature').textContent = `${tempC}°C`
-        document.getElementById('title').textContent = `Quel temps fait il a ${name} ?`
+        document.getElementById('title').textContent = `Quel temps fait il à ${name} ?`
     }
 }
 getWeather();
