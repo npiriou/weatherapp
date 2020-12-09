@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo a Bayonne</title>
+
+    <link rel='stylesheet' type='text/css' href='style.css'>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">🏙️</span>
+            <input type="text" id='input-city' class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1">
+          </div>
+<button id='search-button' class='btn btn-primary'>Météo !</button>
+<div id="text-404">Ville pas trouvée 😞 </div> 
+
+
+
+<h1 id='title'></h1>
+
+<div id="icon-container"></div>
+<div id="description"></div>
+<div id="temperature"></div>
+    </main>
+</body>
+    <script src='scripts.js'></script>
+</html>
