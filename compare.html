@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compare deux villes</title>
+    <title>App Météo</title>
 
     <link rel='stylesheet' type='text/css' href='style.css'>
     <!-- Bootstrap -->
@@ -17,7 +17,7 @@
     <main>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">🏠 Chez moi </span>
-            <input type="text" id='input-city0' class="form-control input-city" placeholder="Par exemple : Paris" aria-label="City"
+            <input type="text" id='input-city0' class="form-control input-city" placeholder="exemple : Paris" aria-label="City"
                 aria-describedby="basic-addon1">
         </div>
         <span id="text-found-0"></span>
@@ -27,7 +27,7 @@
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">🌴 Pour comparer</span>
-            <input type="text" id='input-city1' class="form-control input-city" placeholder="Par exemple : Bali" aria-label="City"
+            <input type="text" id='input-city1' class="form-control input-city" placeholder="exemple : Bali" aria-label="City"
                 aria-describedby="basic-addon1">
         </div>
         <span id="text-found-1"></span>
@@ -36,12 +36,12 @@
 
         <button id='compare-button' class='btn btn-success' >Chercher les villes</button>
         <h1 id='title'></h1>
-
+<p id="description"></p>
 
     </main>
     <nav>
-        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='index.html';">Home</button>
-        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='compare.html';">Comparaison</button>
+        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='index.html';"><img class='svg' src='svg/sun.svg' /></button>
+        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='compare.html';"><img class='svg' src='svg/avoidance.svg' /></button>
     </nav>
 </body>
 <script src='compare.js'></script>

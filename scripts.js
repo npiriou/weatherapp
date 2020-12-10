@@ -4,7 +4,7 @@ let city1, city2;
 async function getWeather() {
     const response = await fetch(apiUrl)
     const data = await response.json()
-console.log(data.cod)
+
     if (data.cod === '404') document.getElementById('text-404').style.visibility = 'visible'
     else {
         document.getElementById('text-404').style.visibility = 'hidden'

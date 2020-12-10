@@ -1,7 +1,8 @@
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
+
 main {
     padding: 5vh 5vw 5vh 5vw;
     text-align: center;
@@ -13,28 +14,40 @@ main {
 
 nav {
     position: fixed;
-    bottom:0;
+    bottom: 0;
     width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     background-color: darkgrey;
     border-top: 1px solid black;
 }
-.nav-elem{
+
+.nav-elem {
     border: 1px solid black;
-    padding: 3vh 3vw 3vh 3vw !important;
-    border-radius:5px;
-}
-.nav-elem:hover{
-cursor: pointer;
+    padding: 0 3vw 0 3vw !important;
+    border-radius: 10px;
 }
 
-h1{
+.nav-elem:hover {
+    cursor: pointer;
+}
+img.svg {
+    width: 10vh;
+    height: 10vh;
+    border-radius:10px;
+}
+
+h1 {
     padding: 5vh 3vw 5vh 3vw !important;
 }
+
 input:placeholder-shown {
     font-style: italic;
- }
+}
+.input-group{
+margin:auto !important;
+width: min(90%,600px) !important;
+}

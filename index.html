@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Météo</title>
+    <title>App Météo</title>
 
     <link rel='stylesheet' type='text/css' href='style.css'>
     <!-- Bootstrap -->
@@ -17,7 +17,7 @@
     <main>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">🏙️</span>
-            <input type="text" id='input-city' class="form-control" placeholder="City" aria-label="City"
+            <input type="text" id='input-city' class="form-control" placeholder="exemple : Paris" aria-label="City"
                 aria-describedby="basic-addon1">
         </div>
         <button id='search-button' class='btn btn-primary'>Météo !</button>
@@ -32,8 +32,8 @@
         <div id="temperature"></div>
     </main>
     <nav>
-        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='index.html';">Home</button>
-        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='compare.html';">Comparaison</button>
+        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='index.html';"><img class='svg' src='svg/sun.svg' /></button>
+        <button type="button" class="btn btn-dark nav-elem" onclick="location.href='compare.html';"><img class='svg' src='svg/avoidance.svg' /></button>
     </nav>
 </body>
 <script src='scripts.js'></script>
