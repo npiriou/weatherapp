@@ -32,7 +32,7 @@ async function compare() {
         const temp1 = Math.round(cities[1].main.temp - 273.15)
    
         const diff = temp1 - temp0;
-        const mess = diff == 0 ? `la même température` : diff > 0 ? `${diff} degrés de plus` : `${diff} degrés de moins`
+        const mess = diff == 0 ? `la même température` : diff > 0 ? `${diff} degrés de plus` : `${Math.abs(diff)} degrés de moins`
 
 
         document.getElementById('title').textContent = `En ce moment il fait ${mess} à ${cities[1].name}`

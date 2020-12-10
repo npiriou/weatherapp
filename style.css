@@ -16,18 +16,11 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: darkgrey;
-    border-top: 1px solid black;
+    height: 20vh;
 }
 
 .nav-elem {
     border: 1px solid black;
-    padding: 0 3vw 0 3vw !important;
     border-radius: 10px;
 }
 
